@@ -7,40 +7,101 @@
     tools:context="com.example.abdulelrahwa.myapplicationfr.MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <Button
-            android:id="@+id/btnHit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/tvJsonItem"
-            android:layout_marginEnd="84dp"
-            android:layout_marginRight="84dp"
-            android:layout_marginTop="100dp"
-            android:text="Hit"
-            tools:layout_editor_absoluteX="136dp"
-            tools:layout_editor_absoluteY="272dp" />
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
         <TextView
             android:id="@+id/tvJsonItem"
-            android:layout_width="wrap_content"
-            android:layout_height="17dp"
-            android:layout_alignEnd="@+id/btnHit"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
             android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/btnHit"
-            android:layout_marginTop="215dp"
-            android:text="Hello World!"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Set up!"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginStart="53dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Destination" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Time to get ready" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:inputType="time"
+            android:text="Arrival time" />
+
+        <EditText
+            android:id="@+id/homebox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_marginBottom="14dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Home address"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="82dp" />
+
+        <Button
+            android:id="@+id/btnHit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvJsonItem"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tvJsonItem"
+            android:layout_marginBottom="24dp"
+            android:text="Button" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnHit"
+            android:layout_alignEnd="@+id/editText4"
+            android:layout_alignRight="@+id/editText4"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Current time" />
+
     </RelativeLayout>
+
+
 
 
 </android.support.constraint.ConstraintLayout>
